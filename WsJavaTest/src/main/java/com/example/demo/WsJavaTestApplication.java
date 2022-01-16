@@ -8,11 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class WsJavaTestApplication {
-	
-	@RequestMapping(value="/")
-	public String index() {
-		return "<h1> Hello </h1>";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(WsJavaTestApplication.class, args);
