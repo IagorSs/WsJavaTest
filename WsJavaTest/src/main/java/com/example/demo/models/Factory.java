@@ -1,17 +1,15 @@
 package com.example.demo.models;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Factory {
 	
 	@Id
-	@SequenceGenerator(name="pk_sequence",sequenceName="factory_id_seq", allocationSize=1)
-	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence")
 	private long id;
 	
 	private String name;

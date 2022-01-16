@@ -6,12 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.SequenceGenerator;
 
 import com.example.demo.enums.Fuel;
 
@@ -19,8 +16,6 @@ import com.example.demo.enums.Fuel;
 public class Car {
 
 	@Id
-	@SequenceGenerator(name="pk_sequence",sequenceName="car_id_seq", allocationSize=1)
-	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence")
 	private long id;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
