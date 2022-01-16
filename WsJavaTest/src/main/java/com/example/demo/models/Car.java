@@ -23,7 +23,7 @@ public class Car {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="factorie_id")
-	private Factorie factorie;
+	private Factory factory;
 	
 	private String model;
 	
@@ -46,12 +46,12 @@ public class Car {
 		this.id = id;
 	}
 
-	public Factorie getFactorie() {
-		return factorie;
+	public Factory getFactorie() {
+		return factory;
 	}
 
-	public void setFactorie(Factorie factorie) {
-		this.factorie = factorie;
+	public void setFactorie(Factory factorie) {
+		this.factory = factorie;
 	}
 
 	public String getModel() {

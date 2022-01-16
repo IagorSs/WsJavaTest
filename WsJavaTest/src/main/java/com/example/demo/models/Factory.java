@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Factorie {
+public class Factory {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
