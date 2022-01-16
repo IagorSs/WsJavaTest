@@ -1,7 +1,8 @@
 package com.example.demo.enums;
 
 public enum Fuel {
-	GASOLINE,
-	ALCOHOL,
-	ELETRICITY
+	GASOLINA,
+	ALCOOL,
+	DIESEL,
+	FLEX
 }
